@@ -20,7 +20,7 @@ let addPost = () => {
       <div><textarea ref={newPostElement}></textarea></div>
       <div><button onClick={ addPost }> Add post </button></div>
     </div>
-    <div>New post</div>
+    <div>New post :з</div>
     <div className={s.posts}>
       {postsElements}
     </div>
