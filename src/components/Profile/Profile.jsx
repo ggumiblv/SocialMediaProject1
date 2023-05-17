@@ -2,13 +2,14 @@ import React from 'react';
 import MyPosts from './MyPosts/MyPosts';
 import s from './Profile.module.css'
 import ProfileInfo from './ProfileInfo/ProfileInfo';
+import state, { addPost } from '../../redux/state';
 
 const Profile = (props) => {
 
   return (
     <div>
       <ProfileInfo />
-      <MyPosts posts={props.posts} />
+      <MyPosts posts={props.state.posts} addPost={props.addPost}/>
     </div>
   );
 
